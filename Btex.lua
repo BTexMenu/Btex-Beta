@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------------------------------
 --                                               BTEX(Bottom TEXture)                                 --
---                                      V10.x.x (WoW 10.x.x) - 2022 by Zetaprime82                    --
+--                                      V10.2 (WoW 10.0.5) - 2023 by Zetaprime82                      --
 --                                            Former Author: Twistedfury                              --
 --                                         originally from Tiggy, Ysondre-EU                          --
 --------------------------------------------------------------------------------------------------------
@@ -199,7 +199,7 @@ end
 local BtexMenuFrame = CreateFrame("Frame","btexframeconfig",UIParent, BackdropTemplateMixin and "BackdropTemplate");
 BtexMenuFrame:SetWidth(400);
 BtexMenuFrame:SetHeight(480);
-BtexMenuFrame:SetBackdrop({ bgFile = "Interface\\Tooltips\\UI-Tooltip-Background", edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", tile = true, tileSize = 8, edgeSize = 12, insets = { left = 2, right = 2, top = 2, bottom = 2 } });
+BtexMenuFrame:SetBackdrop({ bgFile = "interface\\dialogframe\\ui-dialogbox-background.blp", edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", tile = true, tileSize = 8, edgeSize = 12, insets = { left = 2, right = 2, top = 2, bottom = 2 } });
 BtexMenuFrame:SetBackdropColor(0.1,0.1,0.2,1);
 BtexMenuFrame:SetBackdropBorderColor(0.1,0.1,0.1,1);
 BtexMenuFrame:SetMovable(1);
@@ -420,7 +420,7 @@ end
 BtexViewportFrame = CreateFrame("Frame","BtexViewportFrame",UIParent, BackdropTemplateMixin and "BackdropTemplate");
 BtexViewportFrame:SetWidth(330);
 BtexViewportFrame:SetHeight(200);
-BtexViewportFrame:SetBackdrop({ bgFile = "Interface\\Tooltips\\UI-Tooltip-Background", edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", tile = true, tileSize = 8, edgeSize = 12, insets = { left = 2, right = 2, top = 2, bottom = 2 } });
+BtexViewportFrame:SetBackdrop({ bgFile = "interface\\dialogframe\\ui-dialogbox-background.blp", edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", tile = true, tileSize = 8, edgeSize = 12, insets = { left = 2, right = 2, top = 2, bottom = 2 } });
 BtexViewportFrame:SetBackdropColor(0.1,0.1,0.2,1);
 BtexViewportFrame:SetBackdropBorderColor(0.1,0.1,0.1,1);
 BtexViewportFrame:SetMovable(1);
@@ -564,7 +564,7 @@ BtexViewportFrame.reset:SetText(DEFAULT);
 local BtexCustomFrame = CreateFrame("Frame","btexframeconfig",UIParent, BackdropTemplateMixin and "BackdropTemplate");
 BtexCustomFrame:SetWidth(450);
 BtexCustomFrame:SetHeight(340);
-BtexCustomFrame:SetBackdrop({ bgFile = "Interface\\Tooltips\\UI-Tooltip-Background", edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", tile = true, tileSize = 8, edgeSize = 12, insets = { left = 2, right = 2, top = 2, bottom = 2 } });
+BtexCustomFrame:SetBackdrop({ bgFile = "interface\\dialogframe\\ui-dialogbox-background.blp", edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", tile = true, tileSize = 8, edgeSize = 12, insets = { left = 2, right = 2, top = 2, bottom = 2 } });
 BtexCustomFrame:SetBackdropColor(0.1,0.1,0.2,1);
 BtexCustomFrame:SetBackdropBorderColor(0.1,0.1,0.1,1);
 BtexCustomFrame:SetMovable(1);
@@ -911,6 +911,22 @@ function BtexDropDownMenu_Initialise()
 	info.checked = nil;
 	info.icon = nil;
 	UIDropDownMenu_AddButton(info, level);
+		--menu item15
+	info.text = "ElvUIa";
+	info.value = 15;
+	info.func = BtexDropDownMenuItem_OnClick;
+	info.owner = BtexDropDownMenu;
+	info.checked = nil;
+	info.icon = nil;
+	UIDropDownMenu_AddButton(info, level);
+		--menu item16
+	info.text = "ElvUIb";
+	info.value = 16;
+	info.func = BtexDropDownMenuItem_OnClick;
+	info.owner = BtexDropDownMenu;
+	info.checked = nil;
+	info.icon = nil;
+	UIDropDownMenu_AddButton(info, level);
 end
 -- Initialise
 UIDropDownMenu_Initialize(BtexDropDownMenu, BtexDropDownMenu_Initialise);
@@ -963,6 +979,12 @@ function BtexDropDownMenuItem_OnClick(self)
   TexturePreviewFrame:Hide();
   elseif (self.value == 14) then
   TEX_CHOICE = "D"
+  TexturePreviewFrame:Hide();
+  elseif (self.value == 15) then
+  TEX_CHOICE = "ElvUIa"
+  TexturePreviewFrame:Hide();
+  elseif (self.value == 16) then
+  TEX_CHOICE = "ElvUIb"
   TexturePreviewFrame:Hide();
   end
 end
