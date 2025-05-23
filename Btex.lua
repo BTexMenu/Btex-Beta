@@ -1,8 +1,8 @@
 --------------------------------------------------------------------------------------------------------
 --                                               BTEX(Bottom TEXture)                                 --
---                                      V10.2 (WoW 10.0.5) - 2023 by Zetaprime82                      --
+--                         V11.1.7 (Retail, Classic and Classic Era) - 2025 by Zetaprime82            --
 --                                            Former Author: Twistedfury                              --
---                                         originally from Tiggy, Ysondre-EU                          --
+--                                       Originally Author Tiggy, Ysondre-EU                          --
 --------------------------------------------------------------------------------------------------------
 DEFAULT_CHAT_FRAME:AddMessage("|c00bfffffBtex|r " ..BTEX_VERSION..SLASHLOAD, 0.0, .80, 1);
 --------------------------------------------------------------------------------------------------------
@@ -32,7 +32,7 @@ local texture4 = BtexMainFrame4:CreateTexture(nil,"BACKGROUND");
 
 --font button
 local BtexFont = CreateFont("Btest");
-BtexFont:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 9,"MONOCHROME");
+BtexFont:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 10,"");
 
 -- Viewport Woldframe
 function BtexViewport()
@@ -219,48 +219,48 @@ BtexMenuFrame.text1:SetFont("Interface\\AddOns\\Btex\\Menu.ttf", 30, "");
 BtexMenuFrame.text1:SetPoint("TOP",0,-10);
 BtexMenuFrame.text1:SetText("BTex Menu");
 BtexMenuFrame.vers = BtexMenuFrame:CreateFontString(nil,"ARTWORK");
-BtexMenuFrame.vers:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 8, "");
-BtexMenuFrame.vers:SetPoint("TOPRIGHT",-20,-16);
+BtexMenuFrame.vers:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 10, "");
+BtexMenuFrame.vers:SetPoint("TOPRIGHT",-15,-16);
 BtexMenuFrame.vers:SetText("Version :"..BTEX_VERSION);
 BtexMenuFrame.vers:SetTextColor(1,1,0.5);
 BtexMenuFrame.text2 = BtexMenuFrame:CreateFontString(nil,"ARTWORK");
-BtexMenuFrame.text2:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 8, "");
+BtexMenuFrame.text2:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 10, "");
 BtexMenuFrame.text2:SetPoint("TOPLEFT",10,-60);
 BtexMenuFrame.text2:SetText(SKINCHOOSE);
 BtexMenuFrame.text3 = BtexMenuFrame:CreateFontString(nil,"ARTWORK");
-BtexMenuFrame.text3:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 8, "");
+BtexMenuFrame.text3:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 10, "");
 BtexMenuFrame.text3:SetPoint("TOPLEFT",10,-90);
 BtexMenuFrame.text3:SetText(SETHEIGHT);
 BtexMenuFrame.text4 = BtexMenuFrame:CreateFontString(nil,"ARTWORK");
-BtexMenuFrame.text4:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 8, "");
+BtexMenuFrame.text4:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 10, "");
 BtexMenuFrame.text4:SetPoint("TOPLEFT",180,-90);
 BtexMenuFrame.text4:SetText(HEIGHTDEFAULT);
 BtexMenuFrame.text5 = BtexMenuFrame:CreateFontString(nil,"ARTWORK");
-BtexMenuFrame.text5:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 8, "");
+BtexMenuFrame.text5:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 10, "");
 BtexMenuFrame.text5:SetPoint("TOPLEFT",10,-150);
 BtexMenuFrame.text5:SetText(SETALPHA);
 BtexMenuFrame.text6 = BtexMenuFrame:CreateFontString(nil,"ARTWORK");
-BtexMenuFrame.text6:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 8, "");
+BtexMenuFrame.text6:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 10, "");
 BtexMenuFrame.text6:SetPoint("TOPLEFT",180,-150);
 BtexMenuFrame.text6:SetText(ALPHADEFAULT);
 BtexMenuFrame.text7 = BtexMenuFrame:CreateFontString(nil,"ARTWORK");
-BtexMenuFrame.text7:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 8, "");
+BtexMenuFrame.text7:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 10, "");
 BtexMenuFrame.text7:SetPoint("TOPLEFT",10,-120);
 BtexMenuFrame.text7:SetText(SETWIDTH);
 BtexMenuFrame.text8 = BtexMenuFrame:CreateFontString(nil,"ARTWORK");
-BtexMenuFrame.text8:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 8, "");
+BtexMenuFrame.text8:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 10, "");
 BtexMenuFrame.text8:SetPoint("TOPLEFT",180,-120);
 BtexMenuFrame.text8:SetText(WIDHTDEFAULT);
 BtexMenuFrame.placementx = BtexMenuFrame:CreateFontString(nil,"ARTWORK");
-BtexMenuFrame.placementx:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 8, "");
+BtexMenuFrame.placementx:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 10, "");
 BtexMenuFrame.placementx:SetPoint("TOPLEFT",10,-180);
 BtexMenuFrame.placementx:SetText(BTEXTUREPLACEX);
 BtexMenuFrame.placementy = BtexMenuFrame:CreateFontString(nil,"ARTWORK");
-BtexMenuFrame.placementy:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 8, "");
+BtexMenuFrame.placementy:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 10, "");
 BtexMenuFrame.placementy:SetPoint("TOPLEFT",180,-180);
 BtexMenuFrame.placementy:SetText(BTEXTUREPLACEY);
 BtexMenuFrame.Strata = BtexMenuFrame:CreateFontString(nil,"ARTWORK");
-BtexMenuFrame.Strata:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 8, "");
+BtexMenuFrame.Strata:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 10, "");
 BtexMenuFrame.Strata:SetPoint("TOPLEFT",10,-210);
 BtexMenuFrame.Strata:SetText(BTEXSTRATA);
 -- moving
@@ -418,8 +418,8 @@ end
 --------------------------------------------------------------------------------------------------------
 -- frame
 BtexViewportFrame = CreateFrame("Frame","BtexViewportFrame",UIParent, BackdropTemplateMixin and "BackdropTemplate");
-BtexViewportFrame:SetWidth(330);
-BtexViewportFrame:SetHeight(200);
+BtexViewportFrame:SetWidth(335);
+BtexViewportFrame:SetHeight(210);
 BtexViewportFrame:SetBackdrop({ bgFile = "interface\\dialogframe\\ui-dialogbox-background.blp", edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", tile = true, tileSize = 8, edgeSize = 12, insets = { left = 2, right = 2, top = 2, bottom = 2 } });
 BtexViewportFrame:SetBackdropColor(0.1,0.1,0.2,1);
 BtexViewportFrame:SetBackdropBorderColor(0.1,0.1,0.1,1);
@@ -435,28 +435,28 @@ BtexViewportFrame:SetScript("OnMouseUp",function() BtexViewportFrame:StopMovingO
 
 -- text
 BtexViewportFrame.text1 = BtexViewportFrame:CreateFontString(nil,"ARTWORK");
-BtexViewportFrame.text1:SetFont("Interface\\AddOns\\Btex\\Menu.ttf", 12, "");
+BtexViewportFrame.text1:SetFont("Interface\\AddOns\\Btex\\Menu.ttf", 21, "");
 BtexViewportFrame.text1:SetPoint("TOP",0,-10);
 BtexViewportFrame.text1:SetText("Viewport settings");
 BtexViewportFrame.text2 = BtexViewportFrame:CreateFontString(nil,"ARTWORK");
-BtexViewportFrame.text2:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 8, "");
-BtexViewportFrame.text2:SetPoint("TOPLEFT",30,-30);
+BtexViewportFrame.text2:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 10, "");
+BtexViewportFrame.text2:SetPoint("TOPLEFT",78,-30);
 BtexViewportFrame.text2:SetText(VIEWPORTTXT1);
 BtexViewportFrame.right = BtexViewportFrame:CreateFontString(nil,"ARTWORK");
-BtexViewportFrame.right:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 8, "");
-BtexViewportFrame.right:SetPoint("TOPLEFT",50,-85);
+BtexViewportFrame.right:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 10, "");
+BtexViewportFrame.right:SetPoint("TOPLEFT",60,-85);
 BtexViewportFrame.right:SetText(VIEWPORTRIGHT);
 BtexViewportFrame.left = BtexViewportFrame:CreateFontString(nil,"ARTWORK");
-BtexViewportFrame.left:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 8, "");
-BtexViewportFrame.left:SetPoint("TOPLEFT",50,-110);
+BtexViewportFrame.left:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 10, "");
+BtexViewportFrame.left:SetPoint("TOPLEFT",60,-110);
 BtexViewportFrame.left:SetText(VIEWPORTLEFT);
 BtexViewportFrame.bottom = BtexViewportFrame:CreateFontString(nil,"ARTWORK");
-BtexViewportFrame.bottom:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 8, "");
-BtexViewportFrame.bottom:SetPoint("TOPLEFT",190,-85);
+BtexViewportFrame.bottom:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 10, "");
+BtexViewportFrame.bottom:SetPoint("TOPLEFT",183,-85);
 BtexViewportFrame.bottom:SetText(VIEWPORTBOTTOM);
 BtexViewportFrame.top = BtexViewportFrame:CreateFontString(nil,"ARTWORK");
-BtexViewportFrame.top:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 8, "");
-BtexViewportFrame.top:SetPoint("TOPLEFT",190,-110);
+BtexViewportFrame.top:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 10, "");
+BtexViewportFrame.top:SetPoint("TOPLEFT",183,-110);
 BtexViewportFrame.top:SetText(VIEWPORTTOP);
 
 -- EditBox Set viewport RIGHT
@@ -471,7 +471,7 @@ end
 BtexViewportFrame.EditBL = CreateFrame("EditBox","BtexEditViewportBL",BtexViewportFrame,"InputBoxTemplate");
 BtexViewportFrame.EditBL:SetWidth(45);
 BtexViewportFrame.EditBL:SetHeight(21);
-BtexViewportFrame.EditBL:SetPoint("TOPLEFT",130,-80);
+BtexViewportFrame.EditBL:SetPoint("TOPLEFT",110,-80);
 BtexViewportFrame.EditBL:SetAutoFocus(nil);
 BtexViewportFrame.EditBL:SetMaxLetters(4);
 BtexViewportFrame.EditBL:SetTextColor(1.0,0.82,0);
@@ -507,7 +507,7 @@ end
 BtexViewportFrame.EditTL = CreateFrame("EditBox","BtexEditViewportTL",BtexViewportFrame,"InputBoxTemplate");
 BtexViewportFrame.EditTL:SetWidth(45);
 BtexViewportFrame.EditTL:SetHeight(21);
-BtexViewportFrame.EditTL:SetPoint("TOPLEFT",130,-105);
+BtexViewportFrame.EditTL:SetPoint("TOPLEFT",110,-105);
 BtexViewportFrame.EditTL:SetAutoFocus(nil);
 BtexViewportFrame.EditTL:SetMaxLetters(4);
 BtexViewportFrame.EditTL:SetTextColor(1.0,0.82,0);
@@ -562,8 +562,8 @@ BtexViewportFrame.reset:SetText(DEFAULT);
 --------------------------------------------------------------------------------------------------------
 -- frame
 local BtexCustomFrame = CreateFrame("Frame","btexframeconfig",UIParent, BackdropTemplateMixin and "BackdropTemplate");
-BtexCustomFrame:SetWidth(450);
-BtexCustomFrame:SetHeight(340);
+BtexCustomFrame:SetWidth(485);
+BtexCustomFrame:SetHeight(350);
 BtexCustomFrame:SetBackdrop({ bgFile = "interface\\dialogframe\\ui-dialogbox-background.blp", edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", tile = true, tileSize = 8, edgeSize = 12, insets = { left = 2, right = 2, top = 2, bottom = 2 } });
 BtexCustomFrame:SetBackdropColor(0.1,0.1,0.2,1);
 BtexCustomFrame:SetBackdropBorderColor(0.1,0.1,0.1,1);
@@ -579,59 +579,59 @@ BtexCustomFrame:SetScript("OnMouseUp",function() BtexCustomFrame:StopMovingOrSiz
 
 -- text
 BtexCustomFrame.text1 = BtexCustomFrame:CreateFontString(nil,"ARTWORK");
-BtexCustomFrame.text1:SetFont("Interface\\AddOns\\Btex\\Menu.ttf", 12, "");
+BtexCustomFrame.text1:SetFont("Interface\\AddOns\\Btex\\Menu.ttf", 21, "");
 BtexCustomFrame.text1:SetPoint("TOP",0,-10);
 BtexCustomFrame.text1:SetText("Load Custom Texture pack");
 BtexCustomFrame.text2 = BtexCustomFrame:CreateFontString(nil,"ARTWORK");
-BtexCustomFrame.text2:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 8, "");
+BtexCustomFrame.text2:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 10, "");
 BtexCustomFrame.text2:SetPoint("TOPLEFT",10,-50);
 BtexCustomFrame.text2:SetText(CUSTOMRULES1);
 BtexCustomFrame.text3 = BtexCustomFrame:CreateFontString(nil,"ARTWORK");
-BtexCustomFrame.text3:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 8, "");
+BtexCustomFrame.text3:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 10, "");
 BtexCustomFrame.text3:SetPoint("TOPLEFT",10,-65);
 BtexCustomFrame.text3:SetText(CUSTOMRULES2);
 BtexCustomFrame.text4 = BtexCustomFrame:CreateFontString(nil,"ARTWORK");
-BtexCustomFrame.text4:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 8, "");
+BtexCustomFrame.text4:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 10, "");
 BtexCustomFrame.text4:SetPoint("TOPLEFT",10,-80);
 BtexCustomFrame.text4:SetText(CUSTOMRULES3);
 BtexCustomFrame.text5 = BtexCustomFrame:CreateFontString(nil,"ARTWORK");
-BtexCustomFrame.text5:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 8, "");
+BtexCustomFrame.text5:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 10, "");
 BtexCustomFrame.text5:SetPoint("TOPLEFT",10,-95);
 BtexCustomFrame.text5:SetText(CUSTOMRULES4);
 BtexCustomFrame.text6 = BtexCustomFrame:CreateFontString(nil,"ARTWORK");
-BtexCustomFrame.text6:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 8, "");
+BtexCustomFrame.text6:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 10, "");
 BtexCustomFrame.text6:SetPoint("TOPLEFT",10,-110);
 BtexCustomFrame.text6:SetText(CUSTOMRULES5);
 BtexCustomFrame.text7 = BtexCustomFrame:CreateFontString(nil,"ARTWORK");
-BtexCustomFrame.text7:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 8, "");
+BtexCustomFrame.text7:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 10, "");
 BtexCustomFrame.text7:SetPoint("TOPLEFT",10,-125);
 BtexCustomFrame.text7:SetText(CUSTOMRULES6);
 BtexCustomFrame.text8 = BtexCustomFrame:CreateFontString(nil,"ARTWORK");
-BtexCustomFrame.text8:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 8, "");
+BtexCustomFrame.text8:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 10, "");
 BtexCustomFrame.text8:SetPoint("TOPLEFT",10,-150);
 BtexCustomFrame.text8:SetText(CUSTOMSETNAME );
 BtexCustomFrame.text9 = BtexCustomFrame:CreateFontString(nil,"ARTWORK");
-BtexCustomFrame.text9:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 8, "");
+BtexCustomFrame.text9:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 10, "");
 BtexCustomFrame.text9:SetPoint("TOPLEFT",10,-170);
 BtexCustomFrame.text9:SetText(SETHEIGHT );
 BtexCustomFrame.text10 = BtexCustomFrame:CreateFontString(nil,"ARTWORK");
-BtexCustomFrame.text10:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 8, "");
+BtexCustomFrame.text10:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 10, "");
 BtexCustomFrame.text10:SetPoint("TOPLEFT",10,-210);
 BtexCustomFrame.text10:SetText(SETALPHA);
 BtexCustomFrame.text11 = BtexCustomFrame:CreateFontString(nil,"ARTWORK");
-BtexCustomFrame.text11:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 8, "");
+BtexCustomFrame.text11:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 10, "");
 BtexCustomFrame.text11:SetPoint("TOPLEFT",10,-190);
 BtexCustomFrame.text11:SetText(SETWIDTH);
 BtexCustomFrame.placementx = BtexCustomFrame:CreateFontString(nil,"ARTWORK");
-BtexCustomFrame.placementx:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 8, "");
+BtexCustomFrame.placementx:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 10, "");
 BtexCustomFrame.placementx:SetPoint("TOPLEFT",10,-230);
 BtexCustomFrame.placementx:SetText(BTEXTUREPLACEX);
 BtexCustomFrame.placementy = BtexCustomFrame:CreateFontString(nil,"ARTWORK");
-BtexCustomFrame.placementy:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 8, "");
+BtexCustomFrame.placementy:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 10, "");
 BtexCustomFrame.placementy:SetPoint("TOPLEFT",180,-230);
 BtexCustomFrame.placementy:SetText(BTEXTUREPLACEY);
 BtexCustomFrame.Strata = BtexCustomFrame:CreateFontString(nil,"ARTWORK");
-BtexCustomFrame.Strata:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 8, "");
+BtexCustomFrame.Strata:SetFont("Interface\\AddOns\\Btex\\Btex.ttf", 10, "");
 BtexCustomFrame.Strata:SetPoint("TOPLEFT",10,-250);
 BtexCustomFrame.Strata:SetText(BTEXSTRATA);
 
@@ -759,7 +759,7 @@ BtexCustomFrame.btnClose = CreateFrame("Button",nil,BtexCustomFrame,"UIPanelButt
 BtexCustomFrame.btnClose:SetNormalFontObject(BtexFont);
 BtexCustomFrame.btnClose:SetWidth(75);
 BtexCustomFrame.btnClose:SetHeight(24);
-BtexCustomFrame.btnClose:SetPoint("BOTTOMRIGHT",-15,15);
+BtexCustomFrame.btnClose:SetPoint("BOTTOMRIGHT",-35,15);
 BtexCustomFrame.btnClose:SetScript("OnClick",function() BtexCustomFrame:Hide(); end);
 BtexCustomFrame.btnClose:SetText(BTNCLOSE);
 
@@ -768,7 +768,7 @@ BtexCustomFrame.btnCanc = CreateFrame("Button",nil,BtexCustomFrame,"UIPanelButto
 BtexCustomFrame.btnCanc:SetNormalFontObject(BtexFont);
 BtexCustomFrame.btnCanc:SetWidth(75);
 BtexCustomFrame.btnCanc:SetHeight(24);
-BtexCustomFrame.btnCanc:SetPoint("BOTTOMRIGHT",-100,15);
+BtexCustomFrame.btnCanc:SetPoint("BOTTOMRIGHT",-130,15);
 BtexCustomFrame.btnCanc:SetScript("OnClick",function() BtexCustomFrame:Hide(); BtexMenuFrame:Show(); end);
 BtexCustomFrame.btnCanc:SetText(BTNCANCEL);
 
@@ -777,7 +777,7 @@ BtexCustomFrame.Apply = CreateFrame("Button",nil,BtexCustomFrame,"UIPanelButtonT
 BtexCustomFrame.Apply:SetNormalFontObject(BtexFont);
 BtexCustomFrame.Apply:SetWidth(140);
 BtexCustomFrame.Apply:SetHeight(24);
-BtexCustomFrame.Apply:SetPoint("BOTTOMRIGHT",-190,15);
+BtexCustomFrame.Apply:SetPoint("BOTTOMRIGHT",-220,15);
 BtexCustomFrame.Apply:SetScript("OnClick",function() BtexEdit2(); BtexEdit3(); BtexEdit5(); BtexEditCustomWidth(); BtexEditPlacementXCustom(); BtexEditPlacementYCustom(); BTexMain(); end);
 BtexCustomFrame.Apply:SetText(APPLYSKIN);
 

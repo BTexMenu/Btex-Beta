@@ -1,18 +1,21 @@
-## Interface: 100005
-## Title: BTEX 10.2 by |cFFFF8080 Zetaprime82, originally from Tiggy|r
-## Title-frFR: BTEX 10.2 par |cFFFF8080 Zetaprime82, à l'origine à partir de Tiggy|r
-## Title: BTEX |cFFFF8080 v.10.2 |r
-## Version: 10.2 (WoW 10.0.5)
+## Interface: 110105, 110107, 11500, 11507, 40400, 40402
+## Title: BTEX 11.1.7 by |cFFFF8080 Zetaprime82, originally from Tiggy|r
+## Title-frFR: BTEX 11.1.7 par |cFFFF8080 Zetaprime82, à l'origine à partir de Tiggy|r
+## Title: BTEX |cFFFF8080 Retail, Classic and Classic Era |r
+## Version: 11.1.7 (Retail, Classic and Classic Era)
 ## Author: Zetaprime82
 ## X-Author: Tiggy, Twistedfury
 ## Notes: A lightweight addon that provide a customisable background texture at the bottom of the screen
 ## DefaultState: Enabled
 ## X-Category: Interface Enhancements
+## SavedVariablesPerCharacter:TEX_CHOICE,TEX_HEIGHT,UI_WIDTH,TEX_ALPHA,TEX_WIDTH,TEX_X,TEX_Y,TEX_STRATA,TEX_VERTEX_R,TEX_VERTEX_G,TEX_VERTEX_B,TEX_VIEWPORT_BL,TEX_VIEWPORT_BR,TEX_VIEWPORT_TL,TEX_VIEWPORT_TR,TEX_CHAT
+## IconTexture: Interface\AddOns\Btex\Skins\Btex
+
 ## X-Website: http://wow.curseforge.com/addons/btex/
 ## X-Website: https://addons.wago.io/addons/btex
+
 ## X-Curse-Project-ID: 5222
 ## X-Wago-ID: RaN0JMKj
-## SavedVariablesPerCharacter:TEX_CHOICE,TEX_HEIGHT,UI_WIDTH,TEX_ALPHA,TEX_WIDTH,TEX_X,TEX_Y,TEX_STRATA,TEX_VERTEX_R,TEX_VERTEX_G,TEX_VERTEX_B,TEX_VIEWPORT_BL,TEX_VIEWPORT_BR,TEX_VIEWPORT_TL,TEX_VIEWPORT_TR,TEX_CHAT
 
 Localisation.lua
 Btex.lua
