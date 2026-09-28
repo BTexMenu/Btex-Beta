@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------------------------------
 --                                               BTEX(Bottom TEXture)                                 --
---                         V11.1.7 (Retail, Classic and Classic Era) - 2025 by Zetaprime82            --
+--                         V12.1 (Retail, Classic and Classic Era) - 2026 by Zetaprime82              --
 --                                            Former Author: Twistedfury                              --
 --                                       Originally Author Tiggy, Ysondre-EU                          --
 --------------------------------------------------------------------------------------------------------
@@ -62,7 +62,7 @@ DEFAULT_CHAT_FRAME:AddMessage ( "ERROR : No texture set" );
 	BtexMainFrame1:ClearAllPoints();
 	BtexMainFrame1:SetFrameStrata(TEX_STRATA);
 	BtexMainFrame1:SetWidth(TEX_WIDTH);
-	BtexMainFrame1:SetAlpha(TEX_ALPHA); 	
+	BtexMainFrame1:SetAlpha(tonumber(TEX_ALPHA) or 1); 	
 	BtexMainFrame1:SetHeight(TEX_HEIGHT);
 	BtexMainFrame1:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT",TEX_X, TEX_Y);
 	texture1:SetTexture("Interface\\AddOns\\BTEX\\Skins\\"..TEX_CHOICE.."-1");
@@ -75,7 +75,7 @@ DEFAULT_CHAT_FRAME:AddMessage ( "ERROR : No texture set" );
 	BtexMainFrame2:ClearAllPoints();
 	BtexMainFrame2:SetFrameStrata(TEX_STRATA);
 	BtexMainFrame2:SetWidth(TEX_WIDTH); 
-	BtexMainFrame2:SetAlpha(TEX_ALPHA);
+	BtexMainFrame2:SetAlpha(tonumber(TEX_ALPHA) or 1);
 	BtexMainFrame2:SetHeight(TEX_HEIGHT);
 	BtexMainFrame2:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT",TEX_WIDTH+TEX_X, TEX_Y);
 	texture2:SetTexture("Interface\\AddOns\\BTEX\\Skins\\"..TEX_CHOICE.."-2");
@@ -88,7 +88,7 @@ DEFAULT_CHAT_FRAME:AddMessage ( "ERROR : No texture set" );
 	BtexMainFrame3:ClearAllPoints();
 	BtexMainFrame3:SetFrameStrata(TEX_STRATA);
 	BtexMainFrame3:SetWidth(TEX_WIDTH); 
-	BtexMainFrame3:SetAlpha(TEX_ALPHA);
+	BtexMainFrame3:SetAlpha(tonumber(TEX_ALPHA) or 1);
 	BtexMainFrame3:SetHeight(TEX_HEIGHT);
 	BtexMainFrame3:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", TEX_WIDTH*2+TEX_X, TEX_Y);
 	texture3:SetTexture("Interface\\AddOns\\BTEX\\Skins\\"..TEX_CHOICE.."-3");
@@ -101,7 +101,7 @@ DEFAULT_CHAT_FRAME:AddMessage ( "ERROR : No texture set" );
 	BtexMainFrame4:ClearAllPoints();
 	BtexMainFrame4:SetFrameStrata(TEX_STRATA);
 	BtexMainFrame4:SetWidth(TEX_WIDTH); 
-	BtexMainFrame4:SetAlpha(TEX_ALPHA);
+	BtexMainFrame4:SetAlpha(tonumber(TEX_ALPHA) or 1);
 	BtexMainFrame4:SetHeight(TEX_HEIGHT);
 	BtexMainFrame4:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", TEX_WIDTH*3+TEX_X, TEX_Y);
 	texture4:SetTexture("Interface\\AddOns\\BTEX\\Skins\\"..TEX_CHOICE.."-4");
@@ -123,7 +123,7 @@ function OnEvent(self, event)
         if(not TEX_CHOICE) then TEX_CHOICE = 'DS3' end;
         if(not TEX_HEIGHT) then TEX_HEIGHT = '256' end;
 		if(not UI_WIDTH) then UI_WIDTH = UIParent:GetWidth() end;
-		if(not TEX_ALPHA) then TEX_ALPHA = '1' end;
+		if(not TEX_ALPHA) then TEX_ALPHA = 1 end;
 		if(not TEX_WIDTH) then TEX_WIDTH = '512' end;
 		if(not TEX_X) then TEX_X = '0' end;
 		if(not TEX_Y) then TEX_Y = '0' end;
@@ -176,7 +176,7 @@ function Default()
 TEX_CHOICE = 'DS3';
 TEX_HEIGHT = '256';
 UI_WIDTH = UIParent:GetWidth();
-TEX_ALPHA = '1';
+TEX_ALPHA = 1;
 TEX_WIDTH = '512';
 TEX_X = '0';
 TEX_Y = '0';
@@ -930,7 +930,6 @@ function BtexDropDownMenu_Initialise()
 end
 -- Initialise
 UIDropDownMenu_Initialize(BtexDropDownMenu, BtexDropDownMenu_Initialise);
-ToggleDropDownMenu(1, nil, BtexDropDownMenu, self, -20, 0);
 -- Choice
 function BtexDropDownMenuItem_OnClick(self)
   UIDropDownMenu_SetSelectedValue(self.owner, self.value);
@@ -1026,7 +1025,6 @@ function BtexSTRATADropDownMenu_Initialise()
 end
 -- Initialise
 UIDropDownMenu_Initialize(BtexSTRATADropDownMenu, BtexSTRATADropDownMenu_Initialise);
-ToggleDropDownMenu(1, nil, BtexSTRATADropDownMenu, self, -20, 0);
 -- Choice
 function BtexSTRATADropDownMenu_OnClick(self)
   UIDropDownMenu_SetSelectedValue(self.owner, self.value);
@@ -1079,7 +1077,6 @@ function BtexSTRATADropDownMenuCUSTOM_Initialise()
 end
 -- Initialise
 UIDropDownMenu_Initialize(BtexSTRATADropDownMenuCUSTOM, BtexSTRATADropDownMenuCUSTOM_Initialise);
-ToggleDropDownMenu(1, nil, BtexSTRATADropDownMenuCUSTOM, self, -20, 0);
 -- Choice
 function BtexSTRATADropDownMenuCUSTOM_OnClick(self)
   UIDropDownMenu_SetSelectedValue(self.owner, self.value);
@@ -1221,3 +1218,8 @@ function BtexDisplayGrid()
 		BtexGridTexture:SetPoint('BOTTOMRIGHT', BtexGrid, 'TOPRIGHT', 0, -(GetScreenHeight()/2-i*BtexGridHeightStep + 1))
 	end
 end
+
+
+
+
+
