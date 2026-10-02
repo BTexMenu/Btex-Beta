@@ -5,7 +5,7 @@
 ## Title-deDE: BTEX BETA von |cFFFF8080 Zetaprime82, ursprünglich aus Tiggy|r
 ## Title-zhCN: BTEX BETA 经过 |cFFFF8080 Zetaprime82, 最初来自 Tiggy|r
 ## Title-zhTW: BTEX BETA 由 |cFFFF8080 Zetaprime82, 原底是對 Tiggy|r
-## Title: BTEX |cFFFF8080 Retail, Classic and Classic Era |r
+## Title: BTEX |cFFFF8080 Forever BETA |r
 ## Version: BETA (Forever)
 ## Author: Zetaprime82
 ## X-Author: Tiggy, Twistedfury
