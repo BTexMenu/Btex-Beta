@@ -1,12 +1,12 @@
 ## Interface: 120007, 120100, 11508, 20506, 30405, 50504, 16001
-## Title-enUS: BTEX 12.1 by |cFFFF8080 Zetaprime82, originally from Tiggy|r
-## Title-frFR: BTEX 12.1 par |cFFFF8080 Zetaprime82, à l'origine à partir de Tiggy|r
-## Title-ruRU: BTEX 12.1 к |cFFFF8080 Zetaprime82, родом из Tiggy|r
-## Title-deDE: BTEX 12.1 von |cFFFF8080 Zetaprime82, ursprünglich aus Tiggy|r
-## Title-zhCN: BTEX 12.1 经过 |cFFFF8080 Zetaprime82, 最初来自 Tiggy|r
-## Title-zhTW: BTEX 12.1 由 |cFFFF8080 Zetaprime82, 原底是對 Tiggy|r
+## Title-enUS: BTEX BETA by |cFFFF8080 Zetaprime82, originally from Tiggy|r
+## Title-frFR: BTEX BETA par |cFFFF8080 Zetaprime82, à l'origine à partir de Tiggy|r
+## Title-ruRU: BTEX BETA к |cFFFF8080 Zetaprime82, родом из Tiggy|r
+## Title-deDE: BTEX BETA von |cFFFF8080 Zetaprime82, ursprünglich aus Tiggy|r
+## Title-zhCN: BTEX BETA 经过 |cFFFF8080 Zetaprime82, 最初来自 Tiggy|r
+## Title-zhTW: BTEX BETA 由 |cFFFF8080 Zetaprime82, 原底是對 Tiggy|r
 ## Title: BTEX |cFFFF8080 Retail, Classic and Classic Era |r
-## Version: 12.1 (Retail, Forever , Classic and Classic Era)
+## Version: BETA (Forever)
 ## Author: Zetaprime82
 ## X-Author: Tiggy, Twistedfury
 ## Notes: A lightweight addon that provide a customisable background texture at the bottom of the screen
